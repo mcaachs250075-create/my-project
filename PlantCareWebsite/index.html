@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Care Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<header>
+    <nav>
+        <h2>🌿 Plant Care</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#plants">Plants</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="darkModeBtn">🌙 Dark Mode</button>
+    </nav>
+</header>
+
+<!-- Hero -->
+
+<section class="hero" id="home">
+
+    <h1>Bring Nature Into Your Home</h1>
+
+    <p>
+        Learn how to grow healthy, beautiful and happy plants with simple care tips.
+    </p>
+
+    <button>Explore Plants</button>
+
+</section>
+
+<!-- About -->
+
+<section class="about" id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        Plant Care is a simple gardening website that helps plant lovers
+        learn how to grow healthy indoor and outdoor plants.
+        We provide watering tips, sunlight requirements,
+        fertilizer guidance and plant care information.
+    </p>
+
+</section>
+
+<!-- Plants -->
+
+<section class="plants" id="plants">
+
+    <h2>Popular Plants</h2>
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="searchPlant"
+        placeholder="Search Plant">
+
+    </div>
+
+    <div class="plant-container">
+
+        <div class="card">
+
+            <img src="images/aloe.jpg" alt="Aloe Vera">
+
+            <h3>Aloe Vera</h3>
+
+            <p>
+                Aloe Vera is a medicinal plant that requires very little maintenance.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/snake.jpg" alt="Snake Plant">
+
+            <h3>Snake Plant</h3>
+
+            <p>
+                Snake Plant purifies indoor air and is easy to maintain.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/plant.jpg" alt="Money Plant">
+
+            <h3>Money Plant</h3>
+
+            <p>
+                Money Plant is a beautiful indoor plant believed to bring prosperity.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Gallery -->
+
+<section class="gallery" id="gallery">
+
+    <h2>Plant Gallery</h2>
+
+    <div class="gallery-container">
+
+        <img src="images/plant1.jpg" alt="Monstera">
+        <img src="images/plant2.jpg" alt="Peace Lily">
+        <img src="images/plant3.jpg" alt="Spider Plant">
+        <img src="images/plant4.jpg" alt="Cactus">
+        <img src="images/plant5.jpg" alt="Succulent">
+        <img src="images/plant6.jpg" alt="Fern">
+
+    </div>
+
+</section>
+
+<!-- Testimonials -->
+
+<section class="testimonials">
+
+    <h2>What Our Visitors Say</h2>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+
+            <h3>Priya</h3>
+
+            <p>
+                "This website made plant care simple and enjoyable.
+                I learned many useful gardening tips."
+            </p>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <h3>Rahul</h3>
+
+            <p>
+                "Beautiful design and easy-to-understand plant care information."
+            </p>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <h3>Anjali</h3>
+
+            <p>
+                "The gallery and search feature are very helpful for beginners."
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Tips -->
+
+<section class="tips" id="tips">
+
+    <h2>Plant Care Tips</h2>
+
+    <div class="tips-container">
+
+        <div class="tip-box">
+
+            <i class="fa-solid fa-droplet"></i>
+
+            <h3>Water Plants</h3>
+
+            <p>
+                Water only when the top layer of soil becomes dry.
+            </p>
+
+        </div>
+
+        <div class="tip-box">
+
+            <i class="fa-solid fa-sun"></i>
+
+            <h3>Sunlight</h3>
+
+            <p>
+                Keep plants where they receive enough natural sunlight.
+            </p>
+
+        </div>
+
+        <div class="tip-box">
+
+            <i class="fa-solid fa-seedling"></i>
+
+            <h3>Organic Fertilizer</h3>
+
+            <p>
+                Add organic fertilizer once every month for healthy growth.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Water Reminder -->
+
+<section class="reminder" id="reminder">
+
+    <h2>💧 Water Reminder</h2>
+
+    <p>Enter your plant name and watering interval.</p>
+
+    <input type="text" id="plantName" placeholder="Plant Name">
+
+    <input type="number" id="days" placeholder="Water Every (Days)">
+
+    <button id="reminderBtn">Set Reminder</button>
+
+    <p id="result"></p>
+
+</section>
+
+<!-- Contact -->
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <form>
+
+        <input
+        type="text"
+        placeholder="Your Name"
+        required>
+
+        <input
+        type="email"
+        placeholder="Your Email"
+        required>
+
+        <textarea
+        rows="6"
+        placeholder="Your Message"></textarea>
+
+        <button type="submit">
+
+            Send Message
+
+        </button>
+
+    </form>
+
+</section>
+
+<!-- Newsletter -->
+
+<section class="newsletter">
+
+    <h2>Subscribe to Our Newsletter</h2>
+
+    <p>
+        Get weekly plant care tips and gardening updates.
+    </p>
+
+    <input
+    type="email"
+    placeholder="Enter your email">
+
+    <button>
+
+        Subscribe
+
+    </button>
+
+</section>
+<!-- FAQ -->
+
+<section class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<h3>How often should I water indoor plants?</h3>
+<p>Most indoor plants need watering once or twice a week depending on the season.</p>
+</div>
+
+<div class="faq-item">
+<h3>Do all plants need direct sunlight?</h3>
+<p>No. Some plants prefer indirect sunlight or partial shade.</p>
+</div>
+
+<div class="faq-item">
+<h3>When should I use fertilizer?</h3>
+<p>Apply organic fertilizer once every month during the growing season.</p>
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <h3>🌿 Plant Care</h3>
+
+    <p>
+        Helping you grow healthy and beautiful plants.
+    </p>
+
+    <p>
+        Email : plantcare@gmail.com
+    </p>
+
+    <p>
+        Phone : +91 9876543210
+    </p>
+
+    <p>
+        © 2026 Plant Care Website | Designed by S. Rohini
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
